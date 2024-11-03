@@ -15,10 +15,10 @@ document.getElementById('playButton').addEventListener('click', function () {
     const button = document.getElementById('playButton');
     button.style.display = 'none';
     const image = document.getElementById('fullscreenImage');
-    image.style.display = 'none';
 
     video.style.display = 'block'; // Muestra el video
     video.play(); // Reproduce el video
+    image.style.display = 'none';
     // Espera a que la transición de la pantalla de bienvenida termine antes de ocultarla completamente
     // Agregar un evento para cuando el video termine
     video.addEventListener('ended', function () {
