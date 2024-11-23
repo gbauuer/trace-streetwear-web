@@ -1,23 +1,13 @@
 function copyURL() {
-    const url = window.location.href;
-    const title = document.title;
-  
-    if (navigator.share) {
-      // Use the Web Share API if available (mostly mobile devices)
-      navigator.share({
-        title: title,
-        url: url
+  // Get the current page URL
+  const currentURL = window.location.href;
+
+  // Copy the URL to the clipboard
+  navigator.clipboard.writeText(currentURL)
+      .then(() => {
+          // Optional confirmation
+          alert('URL de la página actual copiada al portapapeles.');
       })
-      .then((e) => {})
-      .catch(error => {});
-    } else {
-      // Fallback: copy the URL to the clipboard
-      navigator.clipboard.writeText(url)
-        .then(() => {
-          alert("URL copied to clipboard!");
-        })
-        .catch(err => {
-          console.error("Failed to copy URL:", err);
-        });
-    }
-  }
+      .catch(err => {
+      });
+}
