@@ -2,18 +2,29 @@ let currentIndex = 0;
 const images = [
     "../images/fears-drop-01-front.png", 
     "../images/fears-drop-01-back.png"
-]; // Lista de imágenes
+];
 
 function changeImage(direction) {
-    currentIndex += direction;
+    const imageElement = document.getElementById("slider-image");
 
-    // Asegurarse de que el índice esté en el rango
-    if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-    } else if (currentIndex >= images.length) {
-        currentIndex = 0;
-    }
+    // Desvanecer la imagen actual
+    imageElement.style.opacity = 0;
 
-    // Cambiar la imagen
-    document.getElementById("slider-image").src = images[currentIndex];
+    // Cambiar la imagen después del tiempo de transición
+    setTimeout(() => {
+        currentIndex += direction;
+
+        // Asegurarse de que el índice esté en el rango
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        } else if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+
+        // Actualizar la fuente de la imagen
+        imageElement.src = images[currentIndex];
+
+        // Hacer que aparezca la nueva imagen
+        imageElement.style.opacity = 1;
+    }, 500); // Tiempo debe coincidir con la transición CSS
 }

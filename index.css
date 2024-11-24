@@ -465,6 +465,10 @@ footer {
     /* Bordes redondeados para la imagen */
 }
 
+#slider-image {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
 .product-open-name {
     font-size: 20px;
     /* Tamaño de fuente para el nombre del producto */
