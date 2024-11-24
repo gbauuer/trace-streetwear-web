@@ -53,22 +53,27 @@
 
     <div class="product-open-container">
         <div class="product-open">
-            <a class="product-a" href="https://wa.me/+59896262322?text=Me gustaría recibir más información sobre la remera Members Only del Drop 01.">
-                <img src="remera-oversize-fears-drop-01.png" alt="Nombre del Producto 2" style="width: 100%;" class="product-open-image">
-                <h2 class="product-open-name">REMERA OVERSIZE FEARS - DROP 1</h2>
-                <p class="product-open-description">Esta remera oversize está diseñada para quienes buscan un estilo urbano y auténtico. Con un gráfico central impactante, combina tonos (grises y blancos) que resaltan su carácter moderno. Ideal para un look relajado y cómodo, perfecto para combinar con tus prendas casuales favoritas.
-                    <br><br><strong>Talles disponibles: S/M/L</strong>
-
-                    <br><br>Características:
-                    <br>- Corte oversize
-                    <br>- Gráfico central de alta calidad
-                    <br>- Material suave y cómodo
-                    <br>- Ideal para un estilo urbano y casual</p>
-                <div class="price-open-container">
-                    <p class="product-open-price old-open-price">$1100</p>
-                    <p class="product-open-price current-open-price">$990</p>
+            <div class="image-slider product-open-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <div class="slider-border">
+                    <img id="slider-image" src="../images/fears-drop-01-front.png" alt="Nombre del Producto 2" style="width: 100%;">
                 </div>
-                <h2 class="product-open-more-details">Haga clic aquí para más detalles</h2>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <h2 class="product-open-name">REMERA OVERSIZE FEARS - DROP 1</h2>
+            <p class="product-open-description">Esta remera oversize está diseñada para quienes buscan un estilo urbano y auténtico. Con un gráfico central impactante, combina tonos (grises y blancos) que resaltan su carácter moderno. Ideal para un look relajado y cómodo, perfecto para combinar con tus prendas casuales favoritas.
+                <br><br><strong>Talles disponibles: S/M/L</strong>
+
+                <br><br>Características:
+                <br>- Corte oversize
+                <br>- Gráfico central de alta calidad
+                <br>- Material suave y cómodo
+                <br>- Ideal para un estilo urbano y casual</p>
+            <div class="price-open-container">
+                <p class="product-open-price old-open-price">$1100</p>
+                <p class="product-open-price current-open-price">$990</p>
+            </div>
+            <h2 class="product-open-more-details">Haga clic aquí para más detalles</h2>
         </div>
     </div>
 
@@ -99,6 +104,7 @@
         <!-- JavaScript para abrir/cerrar el menú en móvil -->
         <script src="../scripts/navMenu.js"></script>
         <script src="../scripts/changeMessage.js"></script>
+        <script src="../scripts/sliderFears.js"></script>
 </body>
 
 </html>

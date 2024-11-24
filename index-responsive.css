@@ -38,40 +38,59 @@
 
 @media (max-width: 768px) {
     .products-container {
-        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
-        align-items: center; /* Centra los productos en el eje horizontal */
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra los productos en el eje horizontal */
     }
 
     .product {
-        width: 90%; /* Ancho del producto al 90% del contenedor */
-        margin-bottom: 20px; /* Espacio entre productos */
+        width: 90%;
+        /* Ancho del producto al 90% del contenedor */
+        margin-bottom: 20px;
+        /* Espacio entre productos */
     }
 
     .product-name {
-        font-size: 18px; /* Reduce el tamaño de la fuente para el nombre del producto */
+        font-size: 18px;
+        /* Reduce el tamaño de la fuente para el nombre del producto */
     }
 
     .price-container {
-        flex-direction: column; /* Alinea los precios en columna */
-        align-items: center; /* Centra los precios */
+        flex-direction: column;
+        /* Alinea los precios en columna */
+        align-items: center;
+        /* Centra los precios */
     }
 
     .old-price {
-        font-size: 10px; /* Tamaño de fuente más pequeño para los precios */
+        font-size: 10px;
+        /* Tamaño de fuente más pequeño para los precios */
     }
 
     .current-price {
-        font-size: 16px; /* Tamaño de fuente más pequeño para los precios */
+        font-size: 16px;
+        /* Tamaño de fuente más pequeño para los precios */
     }
 
     .product:hover {
-        transform: translateY(-0px); /* Mueve el producto ligeramente hacia arriba */
-        box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Aumenta la sombra para dar un efecto de elevación */
+        transform: translateY(-0px);
+        /* Mueve el producto ligeramente hacia arriba */
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+        /* Aumenta la sombra para dar un efecto de elevación */
+        content: url();
     }
 
-    .product-open-image {
-        width: 50%;
+    .product-image-fears:hover {
+        content: url('images/fears-drop-01-front.png');
+        /* Imagen al pasar el ratón */
     }
+
+    .product-image-.membersonly:hover {
+        content: url('images/membersonly-drop-01-front.png');
+        /* Imagen al pasar el ratón */
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -93,43 +112,50 @@
 
 @media (max-width: 768px) {
     .product-open {
-        width: 95%; /* Ancho casi completo para móviles */
+        width: 95%;
+        /* Ancho casi completo para móviles */
     }
 
     .product-open-name,
     .product-open-description {
-        font-size: 18px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        font-size: 18px;
+        /* Reducir el tamaño de la fuente en pantallas pequeñas */
     }
 
     .current-open-price {
-        font-size: 16px; /* Tamaño de fuente más pequeño para precios en móviles */
+        font-size: 16px;
+        /* Tamaño de fuente más pequeño para precios en móviles */
     }
 
     .old-open-price {
-        font-size: 11px; /* Tamaño de fuente más pequeño para precios en móviles */
+        font-size: 11px;
+        /* Tamaño de fuente más pequeño para precios en móviles */
     }
 }
 
 @media (max-width: 768px) {
     .sobrenosotros-open {
-        width: 95%; /* Ancho casi completo para móviles */
+        width: 95%;
+        /* Ancho casi completo para móviles */
     }
 
     .sobrenosotros-open-name,
     .sobrenosotros-open-description {
-        font-size: 18px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        font-size: 18px;
+        /* Reducir el tamaño de la fuente en pantallas pequeñas */
     }
 }
 
 @media (max-width: 768px) {
 
     .centered-text {
-        font-size: 4em; /* Tamaño del texto */
+        font-size: 4em;
+        /* Tamaño del texto */
     }
 
     .skipintro-btn {
         padding: 18px 35px;
         font-size: 12px;
     }
-    
+
 }

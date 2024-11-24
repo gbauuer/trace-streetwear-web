@@ -53,24 +53,34 @@
 
     <div class="product-open-container">
         <div class="product-open">
-            <a class="product-a" href="https://wa.me/+59896262322?text=Me gustaría recibir más información sobre la remera Members Only del Drop 01.">
-                <img src="../images/membersonly-drop-01.png" alt="Nombre del Producto 2" style="width: 100%;" class="product-open-image">
-                <h2 class="product-open-name">REMERA OVERSIZE MEMBERS ONLY - DROP 1</h2>
-                <p class="product-open-description">Presentamos nuestra remera oversize "members only", diseñada para quienes buscan un look urbano y auténtico. Con un diseño minimalista en blanco sobre fondo negro, incluye el lema "members only – not for sale" en el centro, acompañado de detalles de texto en el pecho que destacan su origen en Montevideo, Uruguay. Es una prenda de edición exclusiva para los que quieren resaltar su estilo sin renunciar a la comodidad.
-                    <br><br><strong>Talles disponibles: S/M/L</strong>
-
-                    <br><br>Características:
-                    <br>- Corte oversize
-                    <br>- Gráfico exclusivo en blanco y negro
-                    <br>- Material suave y duradero
-                    <br>- Ideal para un look urbano y moderno
-                <div class="price-open-container">
-                    <p class="product-open-price old-open-price">$1100</p>
-                    <p class="product-open-price current-open-price">$990</p>
+            <div class="image-slider product-open-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <div class="slider-border">
+                    <img id="slider-image" src="../images/membersonly-drop-01-front.png" alt="Nombre del Producto 2" style="width: 100%;">
                 </div>
-                <h2 class="product-open-more-details">Haga clic aquí para más detalles</h2>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <h2 class="product-open-name">REMERA OVERSIZE MEMBERS ONLY - DROP 1</h2>
+            <p class="product-open-description">
+                Presentamos nuestra remera oversize "members only", diseñada para quienes buscan un look urbano y auténtico. 
+                Con un diseño minimalista en blanco sobre fondo negro, incluye el lema "members only – not for sale" en el centro, 
+                acompañado de detalles de texto en el pecho que destacan su origen en Montevideo, Uruguay. Es una prenda de edición 
+                exclusiva para los que quieren resaltar su estilo sin renunciar a la comodidad.
+                <br><br><strong>Talles disponibles: S/M/L</strong>
+                <br><br>Características:
+                <br>- Corte oversize
+                <br>- Gráfico exclusivo en blanco y negro
+                <br>- Material suave y duradero
+                <br>- Ideal para un look urbano y moderno
+            </p>
+            <div class="price-open-container">
+                <p class="product-open-price old-open-price">$1100</p>
+                <p class="product-open-price current-open-price">$990</p>
+            </div>
+            <h2 class="product-open-more-details">Haga clic aquí para más detalles</h2>
         </div>
     </div>
+    
 
         
 
@@ -100,6 +110,7 @@
         <!-- JavaScript para abrir/cerrar el menú en móvil -->
         <script src="../scripts/navMenu.js"></script>
         <script src="../scripts/changeMessage.js"></script>
+        <script src="../scripts/sliderMembersonly.js"></script>
 </body>
 
 </html>

@@ -174,11 +174,27 @@ footer {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar un efecto de elevación */
 }
 
-.product-image {
+.product-image-fears {
     width: 100%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 8px; /* Bordes redondeados para la imagen */
 }
+
+.product-image-fears:hover {
+    content: url('images/fears-drop-01-back.png'); /* Imagen al pasar el ratón */
+  }
+
+
+  .product-image-membersonly {
+    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.product-image-membersonly:hover {
+    content: url('images/membersonly-drop-01-back.png'); /* Imagen al pasar el ratón */
+  }
+
 
 .product-name {
     font-size: 20px; /* Tamaño de fuente para el nombre del producto */
@@ -291,25 +307,6 @@ footer {
 }
 
 
-.music-button {
-    z-index: 1000;
-    position: fixed; /* Posiciona el texto de forma absoluta */
-    bottom: 20px; /* Centro verticalmente */
-    right: 20px; /* Centro horizontalmente */
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.music-button:hover {
-    background-color: #888; /* Cambio de color al pasar el mouse */
-}
-
-
 .footer {
     background-color: #111;
     color: #fff;
@@ -403,6 +400,43 @@ footer {
 .product-open-more-details {
     font-size: 20px; /* Tamaño de fuente para el nombre del producto */
     margin: 10px 0; /* Margen vertical alrededor del nombre */
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.image-slider img {
+    width: 100%; /* Se ajusta al tamaño del contenedor */
+    height: auto; /* Mantiene proporciones */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 
