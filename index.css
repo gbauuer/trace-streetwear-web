@@ -180,20 +180,12 @@ footer {
     border-radius: 8px; /* Bordes redondeados para la imagen */
 }
 
-.product-image-fears:hover {
-    content: url('images/fears-drop-01-back.png'); /* Imagen al pasar el ratón */
-  }
-
 
   .product-image-membersonly {
     width: 100%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 8px; /* Bordes redondeados para la imagen */
 }
-
-.product-image-membersonly:hover {
-    content: url('images/membersonly-drop-01-back.png'); /* Imagen al pasar el ratón */
-  }
 
 
 .product-name {

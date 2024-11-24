@@ -80,17 +80,20 @@
         /* Aumenta la sombra para dar un efecto de elevación */
         content: url();
     }
+    
 
+}
+
+@media (min-width: 768px) {
     .product-image-fears:hover {
-        content: url('images/fears-drop-01-front.png');
+        content: url('images/fears-drop-01-back.png');
         /* Imagen al pasar el ratón */
     }
 
-    .product-image-.membersonly:hover {
-        content: url('images/membersonly-drop-01-front.png');
+    .product-image-membersonly:hover {
+        content: url('images/membersonly-drop-01-back.png');
         /* Imagen al pasar el ratón */
     }
-
 }
 
 @media (max-width: 768px) {
