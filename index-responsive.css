@@ -1,5 +1,5 @@
 /* Media Queries para responsive design */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     /* Oculta el menú de navegación en pantallas pequeñas */
 
     body {
