@@ -132,6 +132,16 @@
         font-size: 11px;
         /* Tamaño de fuente más pequeño para precios en móviles */
     }
+
+    .product-open-more-details {
+        font-size: 18px;
+        /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .product-open-details {
+        width: 60%;
+        /* Ancho casi completo para móviles */
+    }
 }
 
 @media (max-width: 768px) {

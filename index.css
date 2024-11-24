@@ -1,13 +1,17 @@
 /* Estilo general */
 
 @font-face {
-    font-family: 'Benzin'; /* Nombre que le asignarás a la fuente */
-    src: url('fonts/Benzin-ExtraBold.ttf') format('truetype'); /* Ruta a la fuente */
+    font-family: 'Benzin';
+    /* Nombre que le asignarás a la fuente */
+    src: url('fonts/Benzin-ExtraBold.ttf') format('truetype');
+    /* Ruta a la fuente */
 }
 
 @font-face {
-    font-family: 'Pollyester'; /* Nombre que le asignarás a la fuente */
-    src: url('fonts/Pollyester.ttf') format('truetype'); /* Ruta a la fuente */
+    font-family: 'Pollyester';
+    /* Nombre que le asignarás a la fuente */
+    src: url('fonts/Pollyester.ttf') format('truetype');
+    /* Ruta a la fuente */
 }
 
 
@@ -50,12 +54,15 @@ footer {
     font-weight: bold;
 }
 
-#text { /* Tamaño de fuente del texto */
-    transition: opacity 0.5s ease; /* Transición para la opacidad */
+#text {
+    /* Tamaño de fuente del texto */
+    transition: opacity 0.5s ease;
+    /* Transición para la opacidad */
 }
 
 .hidden {
-    opacity: 0; /* Opacidad cuando se aplica la clase "hidden" */
+    opacity: 0;
+    /* Opacidad cuando se aplica la clase "hidden" */
 }
 
 
@@ -132,88 +139,129 @@ footer {
 }
 
 .image-container {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho */
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde */
 }
 
 .full-width-image {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Evita espacios debajo de la imagen */
+    width: 100%;
+    /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita espacios debajo de la imagen */
 }
 
 
 .products-container {
-    display: flex; /* Usar flexbox para alinear los productos uno al lado del otro */
-    justify-content: center; /* Centra los productos dentro del contenedor */
-    align-items: flex-start; /* Alinea los productos en la parte superior */
-    gap: 20px; /* Espacio entre los productos */
-    padding: 20px; /* Espacio alrededor del contenedor */
+    display: flex;
+    /* Usar flexbox para alinear los productos uno al lado del otro */
+    justify-content: center;
+    /* Centra los productos dentro del contenedor */
+    align-items: flex-start;
+    /* Alinea los productos en la parte superior */
+    gap: 20px;
+    /* Espacio entre los productos */
+    padding: 20px;
+    /* Espacio alrededor del contenedor */
 }
 
 .product {
-    background-color: white; /* Fondo blanco para cada producto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio interno */
-    width: 420px; /* Ancho fijo para los productos */
+    background-color: white;
+    /* Fondo blanco para cada producto */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el efecto de elevación */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Espacio interno */
+    width: 420px;
+    /* Ancho fijo para los productos */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-a {
-    color: inherit; /* Usa el color del elemento padre */
-    text-decoration: none; /* Elimina el subrayado */
-    font-weight: normal; /* Elimina cualquier estilo de negrita */
-    background: none; /* Elimina cualquier fondo */
-    outline: none; /* Elimina el borde de enfoque */
+    color: inherit;
+    /* Usa el color del elemento padre */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    font-weight: normal;
+    /* Elimina cualquier estilo de negrita */
+    background: none;
+    /* Elimina cualquier fondo */
+    outline: none;
+    /* Elimina el borde de enfoque */
 }
 
 .product:hover {
-    transform: translateY(-5px); /* Mueve el producto ligeramente hacia arriba */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar un efecto de elevación */
+    transform: translateY(-5px);
+    /* Mueve el producto ligeramente hacia arriba */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra para dar un efecto de elevación */
 }
 
 .product-image-fears {
-    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
+    width: 100%;
+    /* Imagen ocupa el 100% del ancho del contenedor del producto */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
 }
 
 
-  .product-image-membersonly {
-    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
+.product-image-membersonly {
+    width: 100%;
+    /* Imagen ocupa el 100% del ancho del contenedor del producto */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
 }
 
 
 .product-name {
-    font-size: 20px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 0; /* Margen vertical alrededor del nombre */
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 0;
+    /* Margen vertical alrededor del nombre */
 }
 
 .price-container {
-    display: flex; /* Usar flexbox para alinear precios uno al lado del otro */
-    justify-content: center; /* Centra los precios dentro del contenedor */
-    margin-top: 10px; /* Espacio por encima del contenedor de precios */
+    display: flex;
+    /* Usar flexbox para alinear precios uno al lado del otro */
+    justify-content: center;
+    /* Centra los precios dentro del contenedor */
+    margin-top: 10px;
+    /* Espacio por encima del contenedor de precios */
 }
 
 .product-price {
-    margin: 0 10px; /* Margen horizontal entre los precios */
+    margin: 0 10px;
+    /* Margen horizontal entre los precios */
 }
 
 .old-price {
     margin-top: 6px;
-    font-size: 12px; /* Tamaño de fuente para los precios */
-    color: #888; /* Color gris para el precio anterior */
-    text-decoration: line-through; /* Tachar el precio anterior */
+    font-size: 12px;
+    /* Tamaño de fuente para los precios */
+    color: #888;
+    /* Color gris para el precio anterior */
+    text-decoration: line-through;
+    /* Tachar el precio anterior */
 }
 
 .current-price {
-    font-size: 18px; /* Tamaño de fuente para los precios */
-    color: #333; /* Color del texto del precio actual */
-    font-weight: bold; /* Hacer que el precio actual sea más destacado */
+    font-size: 18px;
+    /* Tamaño de fuente para los precios */
+    color: #333;
+    /* Color del texto del precio actual */
+    font-weight: bold;
+    /* Hacer que el precio actual sea más destacado */
 }
 
 
@@ -223,11 +271,13 @@ footer {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el botón */
+    transform: translate(-50%, -50%);
+    /* Centra el botón */
     padding: 15px 30px;
     font-size: 40px;
     color: white;
-    background-color: #333; /* Color del botón */
+    background-color: #333;
+    /* Color del botón */
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -235,14 +285,18 @@ footer {
 }
 
 .entrar-btn:hover {
-    background-color: #888; /* Color al pasar el mouse */
+    background-color: #888;
+    /* Color al pasar el mouse */
 }
 
 .skipintro-btn {
     z-index: 1000;
-    position: fixed; /* Posiciona el texto de forma absoluta */
-    bottom: 20px; /* Centro verticalmente */
-    left: 20px; /* Centro horizontalmente */
+    position: fixed;
+    /* Posiciona el texto de forma absoluta */
+    bottom: 20px;
+    /* Centro verticalmente */
+    left: 20px;
+    /* Centro horizontalmente */
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -253,27 +307,42 @@ footer {
 }
 
 .skipintro-btn:hover {
-    background-color: #888; /* Color al pasar el mouse */
+    background-color: #888;
+    /* Color al pasar el mouse */
 }
 
 .fullscreen-video {
-    position: fixed; /* Fija el video en su posición */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    width: 100vw; /* Ocupa el ancho completo de la ventana */
-    height: 100vh; /* Ocupa la altura completa de la ventana */
-    object-fit: cover; /* Asegura que el video cubra el área sin deformarse */
-    transform: translate(-50%, -50%); /* Ajusta para centrar el video */
+    position: fixed;
+    /* Fija el video en su posición */
+    top: 50%;
+    /* Centra verticalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    width: 100vw;
+    /* Ocupa el ancho completo de la ventana */
+    height: 100vh;
+    /* Ocupa la altura completa de la ventana */
+    object-fit: cover;
+    /* Asegura que el video cubra el área sin deformarse */
+    transform: translate(-50%, -50%);
+    /* Ajusta para centrar el video */
 }
 
 .fullscreen-image {
-        position: fixed; /* Fija el video en su posición */
-        top: 50%; /* Centra verticalmente */
-        left: 50%; /* Centra horizontalmente */
-        width: 100vw; /* Ocupa el ancho completo de la ventana */
-        height: 100vh; /* Ocupa la altura completa de la ventana */
-        object-fit: cover; /* Asegura que el video cubra el área sin deformarse */
-        transform: translate(-50%, -50%); /* Ajusta para centrar el video */  
+    position: fixed;
+    /* Fija el video en su posición */
+    top: 50%;
+    /* Centra verticalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    width: 100vw;
+    /* Ocupa el ancho completo de la ventana */
+    height: 100vh;
+    /* Ocupa la altura completa de la ventana */
+    object-fit: cover;
+    /* Asegura que el video cubra el área sin deformarse */
+    transform: translate(-50%, -50%);
+    /* Ajusta para centrar el video */
 }
 
 .screen {
@@ -282,19 +351,29 @@ footer {
 }
 
 .screen.hidden {
-    opacity: 0; /* Oculta la pantalla */
-    pointer-events: none; /* Desactiva los eventos de puntero */
+    opacity: 0;
+    /* Oculta la pantalla */
+    pointer-events: none;
+    /* Desactiva los eventos de puntero */
 }
 
 .centered-text {
-    position: absolute; /* Posiciona el texto de forma absoluta */
-    top: 50%; /* Centro verticalmente */
-    left: 50%; /* Centro horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar el texto */
-    font-size: 5em; /* Tamaño del texto */
-    text-align: center; /* Centra el texto */
-    opacity: 1; /* Opacidad inicial */
-    transition: opacity 0.5s ease; /* Transición de opacidad */
+    position: absolute;
+    /* Posiciona el texto de forma absoluta */
+    top: 50%;
+    /* Centro verticalmente */
+    left: 50%;
+    /* Centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajuste para centrar el texto */
+    font-size: 5em;
+    /* Tamaño del texto */
+    text-align: center;
+    /* Centra el texto */
+    opacity: 1;
+    /* Opacidad inicial */
+    transition: opacity 0.5s ease;
+    /* Transición de opacidad */
     color: #fff;
 }
 
@@ -310,7 +389,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 150px; /* Ajusta el tamaño del logo */
+    width: 150px;
+    /* Ajusta el tamaño del logo */
     margin-right: 20px;
 }
 
@@ -332,66 +412,113 @@ footer {
 
 .product-open-container {
     display: flex;
-    flex-direction: column; /* Apila los precios uno debajo del otro */
-    align-items: center; /* Centra los elementos horizontalmente */
-    padding: 20px; /* Espacio por encima del contenedor */
+    flex-direction: column;
+    /* Apila los precios uno debajo del otro */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    padding: 20px;
+    /* Espacio por encima del contenedor */
 }
 
 .product-open {
-    background-color: white; /* Fondo blanco para cada producto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio interno */
-    width: 700px; /* Ancho fijo para los productos */
+    text-decoration: none;
+    background-color: white;
+    /* Fondo blanco para cada producto */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el efecto de elevación */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    padding-bottom: 60px;
+    /* Espacio interno */
+    width: 700px;
+    /* Ancho fijo para los productos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-open-details {
+    margin-top: -80px;
+    background-color: #111;
+    color: #fff;
+    /* Fondo blanco para cada producto */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el efecto de elevación */
+    text-align: center;
+    /* Centra el texto */
+    padding: 5px;
+    /* Espacio interno */
+    width: 500px;
+    /* Ancho fijo para los productos */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-open-image {
-    width: 50%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
+    width: 50%;
+    /* Imagen ocupa el 100% del ancho del contenedor del producto */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
 }
 
 .product-open-name {
-    font-size: 20px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 0; /* Margen vertical alrededor del nombre */
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 0;
+    /* Margen vertical alrededor del nombre */
 }
 
 .product-open-description {
-    font-size: 20px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 20px; /* Margen vertical alrededor del nombre */
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 20px;
+    /* Margen vertical alrededor del nombre */
     font-family: Arial, sans-serif;
     text-align: left;
     letter-spacing: 0.5px;
 }
 
 .product-open-price {
-    margin: 0 10px; /* Margen horizontal entre los precios */
+    margin: 0 10px;
+    /* Margen horizontal entre los precios */
 }
 
 .old-open-price {
     margin-top: 6px;
-    font-size: 12px; /* Tamaño de fuente para los precios */
-    color: #888; /* Color gris para el precio anterior */
+    font-size: 12px;
+    /* Tamaño de fuente para los precios */
+    color: #888;
+    /* Color gris para el precio anterior */
     text-decoration: line-through;
 }
 
 .current-open-price {
-    font-size: 18px; /* Tamaño de fuente para los precios */
-    color: #333; /* Color del texto del precio actual */
-    font-weight: bold; /* Hacer que el precio actual sea más destacado */
+    font-size: 18px;
+    /* Tamaño de fuente para los precios */
+    color: #333;
+    /* Color del texto del precio actual */
+    font-weight: bold;
+    /* Hacer que el precio actual sea más destacado */
 }
 
 .price-open-container {
-    display: flex; /* Usar flexbox para alinear precios uno al lado del otro */
-    justify-content: center; /* Centra los precios dentro del contenedor */
-    margin-top: 10px; /* Espacio por encima del contenedor de precios */
+    display: flex;
+    /* Usar flexbox para alinear precios uno al lado del otro */
+    justify-content: center;
+    /* Centra los precios dentro del contenedor */
+    margin-top: 10px;
+    /* Espacio por encima del contenedor de precios */
 }
 
 .product-open-more-details {
-    font-size: 20px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 0; /* Margen vertical alrededor del nombre */
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 0;
+    /* Margen vertical alrededor del nombre */
 }
 
 .image-slider {
@@ -402,11 +529,14 @@ footer {
 }
 
 .image-slider img {
-    width: 100%; /* Se ajusta al tamaño del contenedor */
-    height: auto; /* Mantiene proporciones */
+    width: 100%;
+    /* Se ajusta al tamaño del contenedor */
+    height: auto;
+    /* Mantiene proporciones */
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
@@ -434,36 +564,52 @@ button:hover {
 
 .sobrenosotros-open-container {
     display: flex;
-    flex-direction: column; /* Apila los precios uno debajo del otro */
-    align-items: center; /* Centra los elementos horizontalmente */
-    padding: 20px; /* Espacio por encima del contenedor */
+    flex-direction: column;
+    /* Apila los precios uno debajo del otro */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    padding: 20px;
+    /* Espacio por encima del contenedor */
 }
 
 
 .sobrenosotros-open {
-    background-color: white; /* Fondo blanco para cada producto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio interno */
-    width: 1000px; /* Ancho fijo para los productos */
+    background-color: white;
+    /* Fondo blanco para cada producto */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el efecto de elevación */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Espacio interno */
+    width: 1000px;
+    /* Ancho fijo para los productos */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sobrenosotros-open-image {
-    width: 50%; /* Imagen ocupa el 100% del ancho del contenedor del producto */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
+    width: 50%;
+    /* Imagen ocupa el 100% del ancho del contenedor del producto */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
 }
 
 .sobrenosotros-open-name {
-    font-size: 20px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 0; /* Margen vertical alrededor del nombre */
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 0;
+    /* Margen vertical alrededor del nombre */
 }
 
 .sobrenosotros-open-description {
-    font-size: 15px; /* Tamaño de fuente para el nombre del producto */
-    margin: 10px 20px; /* Margen vertical alrededor del nombre */
+    font-size: 15px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 20px;
+    /* Margen vertical alrededor del nombre */
     font-family: Arial, sans-serif;
     text-align: left;
     letter-spacing: 0.5px;
