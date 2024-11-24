@@ -77,8 +77,6 @@
         transform: translateY(-0px);
         /* Mueve el producto ligeramente hacia arriba */
         box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-        /* Aumenta la sombra para dar un efecto de elevación */
-        content: url();
     }
     
 
