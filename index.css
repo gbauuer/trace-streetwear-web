@@ -565,6 +565,42 @@ button:hover {
     color: rgba(0, 0, 0, 0.8);
 }
 
+.c404-open-container {
+    display: flex;
+    flex-direction: column;
+    /* Apila los precios uno debajo del otro */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    padding: 20px;
+    /* Espacio por encima del contenedor */
+}
+
+.c404-open {
+    background-color: white;
+    /* Fondo blanco para cada producto */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para el efecto de elevación */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Espacio interno */
+    width: 1000px;
+    /* Ancho fijo para los productos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.c404-open-description {
+    font-size: 20px;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 10px 20px;
+    /* Margen vertical alrededor del nombre */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
 
 .sobrenosotros-open-container {
     display: flex;
@@ -610,7 +646,7 @@ button:hover {
 }
 
 .sobrenosotros-open-description {
-    font-size: 15px;
+    font-size: 20px;
     /* Tamaño de fuente para el nombre del producto */
     margin: 10px 20px;
     /* Margen vertical alrededor del nombre */

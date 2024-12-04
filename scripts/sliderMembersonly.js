@@ -1,7 +1,8 @@
 let currentIndex = 0;
 const images = [
     "../images/membersonly-drop-01-front.png",
-    "../images/membersonly-drop-01-back.png"
+    "../images/membersonly-drop-01-back.png",
+     "../images/talles-drop-01.png"
 ];
 
 function changeImage(direction) {

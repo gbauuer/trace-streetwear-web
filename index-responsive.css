@@ -158,6 +158,19 @@
 }
 
 @media (max-width: 768px) {
+    .c404-open {
+        width: 95%;
+        /* Ancho casi completo para móviles */
+    }
+
+    .c404-open-name,
+    .c404-open-description {
+        font-size: 18px;
+        /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
 
     .centered-text {
         font-size: 4em;
