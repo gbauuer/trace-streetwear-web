@@ -659,3 +659,60 @@ button:hover {
     font-family: Arial, sans-serif;
     letter-spacing: 0.5px;
 }
+
+
+.sub-menu {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .sub-menu2 {
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 500px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+  }
+  
+  select:hover {
+    border-color: #888;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+
+
+  input {
+    width: 500px;
+    padding: 10px 15px;
+    margin: 5px 0; /* Espaciado arriba y abajo */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:hover {
+    border-color: #888;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
+  }
+  

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Streetwear</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+
+    <!-- Barra de anuncios -->
+    <div class="top-bar">
+        <p id="text">ENVÍOS GRATIS A PARTIR DE $2500</p>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <div class="nav-wrapper">
+            <!-- Icono de menú (solo visible en móviles) -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <a href="/">Tienda</a>
+                <a href="./sobre-nosotros">Sobre nosotros</a>
+                <a href="./whatsapp">Contacto</a>
+            </nav>
+
+            <!-- Logo en el centro -->
+            <div class="logo">
+                <img src="./images/logo.gif" alt="Logo" class="logo-img">
+            </div>
+
+            <!-- Iconos de la derecha -->
+            <div class="nav-icons">
+                <a href="https://www.instagram.com/trace.stw"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="image-container">
+        <img src="./images/drop01.png" alt="Drop01" class="full-width-image">
+    </div>
+
+    <div class="product-open-container">
+        <h2 class="product-open-name">FORMULARIO DE PAGOS</h2>
+
+        <form id="productForm" onsubmit="enviarAWebhook(event)">
+            <div class="product-open">
+                <!-- Menú de Selección de Producto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido aquí">
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" placeholder="Tu número aquí">
+
+                <div class="sub-menu2">
+                    <label for="metodo">Método:</label>
+                    <select id="metodo" name="metodo">
+                        <option value="" disabled selected>-- ELEGIR --</option>
+                        <option value="transferencia">Transferencia</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </div>
+
+                <label for="mainMenu">Producto:</label>
+                <select id="mainMenu" name="producto" onchange="mostrarSubmenu()" required>
+                    <option value="" disabled selected>-- ELEGIR --</option>
+                    <option value="opcion1">REMERA OVERSIZE FEARS - DROP 1</option>
+                    <option value="opcion2">REMERA OVERSIZE MEMBERS ONLY - DROP 1</option>
+                </select>
+    
+                <!-- Submenús de selección según el producto -->
+                <div id="submenu1" class="sub-menu" style="display:none;">
+                    <label for="op1Sub">Talle:</label>
+                    <select id="op1Sub" name="talle1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div id="submenu2" class="sub-menu" style="display:none;">
+                    <label for="op2Sub">Talle:</label>
+                    <select id="op2Sub" name="talle2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Botón de redirección al pago -->
+    <a href="./realizarpagos" 
+       onclick="event.preventDefault(); validarYEnviarFormulario();"
+       style="text-decoration: none; color: inherit;" 
+       class="product-open-container">
+        <div class="product-open-details">
+            <h2 class="product-open-more-details">Haz clic aquí para realizar el pago</h2>
+        </div>
+    </a>
+    
+
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <div>
+            <h3>Menú</h3>
+            <p><a href="./whatsapp">Visitá nuestra tienda</a></p>
+            <p><a href=" https://www.dac.com.uy/envios/rastrear">Rastrea tu envío</a></p>
+            <p><a href="./sobre-nosotroshref=">Sobre nosotros</a></p>
+        </div>
+        <div>
+            <h3>Conocenos</h3>
+            <p><a href="./whatsapp">Contacto</a></p>
+            <p><a href="mailto:email@tracestw.com">email@tracestw.com</a></p>
+        </div>
+    </div>
+
+    <footer class="footer-all">
+        Copyright &copy; <bold>trace</bold>
+        <script>document.write(new Date().getFullYear());</script> | Creado y desarrollado por el equipo de Trace.
+    </footer>
+
+
+    <!-- JavaScript para abrir/cerrar el menú en móvil -->
+    <script src="./scripts/navMenu.js"></script>
+    <script src="./scripts/changeMessage.js"></script>
+    <script src="./scripts/payActions.js"></script>
+</body>
+
+</html>

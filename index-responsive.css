@@ -183,3 +183,20 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    select,
+    input {
+      width: 100%;               /* Que ocupen todo el ancho */
+      font-size: 14px;           /* Tamaño de letra más cómodo para móviles */
+      padding: 8px 12px;         /* Más compacto para pantallas chicas */
+      margin: 10px 0;            /* Espaciado entre campos */
+      box-sizing: border-box;   /* Evita que el padding rompa el layout */
+    }
+  
+    select {
+      background-position: right 8px center;  /* Ajuste del ícono en móvil */
+      background-size: 14px;
+    }
+  }
+  
