@@ -486,6 +486,13 @@ footer {
     letter-spacing: 0.5px;
 }
 
+.product-open-description2 {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
 .product-open-price {
     margin: 0 10px;
     /* Margen horizontal entre los precios */
