@@ -62,9 +62,10 @@ function validarYEnviarFormulario() {
 let nombre = document.getElementById('nombre').value;
 let apellido = document.getElementById('apellido').value;
 let numero = document.getElementById('numero').value;
+let metodo = document.getElementById('metodo').value;
 
   var mensaje = {
-    content: `Nuevo pedido:\n- Nombre: ${nombre}\n- Apellido: ${apellido}\n- Número: ${numero}\n- Producto: ${textoProducto}\n- Talle: ${talle}`
+    content: `Nuevo pedido:\n- Nombre: ${nombre}\n- Apellido: ${apellido}\n- Número: ${numero}\n- Método de pago: ${metodo}\n- Producto: ${textoProducto}\n- Talle: ${talle}`
   };
 
   var webhookUrl = 'https://discord.com/api/webhooks/1362809483838885979/48xTmNBkpvjjKy9koBv9eMPoPAn8UDF3RREF-8EuR4oe1DhfkYodW21uRAWLhbiUqUTS';
