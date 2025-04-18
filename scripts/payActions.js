@@ -84,7 +84,7 @@ let numero = document.getElementById('numero').value;
         return;
     }
     // Si el Webhook fue exitoso, redirigir al pago
-    window.location.href = 'https://tusitio.com/pago?producto=12345&precio=50';
+    window.location.href = "../realizarpagos.html";
   })
   .catch(error => {
     console.error('Error al enviar al Webhook:', error);
