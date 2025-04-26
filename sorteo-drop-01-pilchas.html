@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Streetwear</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+
+    <!-- Barra de anuncios -->
+    <div class="top-bar">
+        <p id="text">ENVÍOS GRATIS A PARTIR DE $2500</p>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <div class="nav-wrapper">
+            <!-- Icono de menú (solo visible en móviles) -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <a href="/">Tienda</a>
+                <a href="./sobre-nosotros">Sobre nosotros</a>
+                <a href="./whatsapp">Contacto</a>
+            </nav>
+
+            <!-- Logo en el centro -->
+            <div class="logo">
+                <img src="./images/logo.gif" alt="Logo" class="logo-img">
+            </div>
+
+            <!-- Iconos de la derecha -->
+            <div class="nav-icons">
+                <a href="https://www.instagram.com/trace.stw"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="image-container">
+        <img src="./images/drop01.png" alt="Drop01" class="full-width-image">
+    </div>
+
+    <div class="product-open-container">
+        <h2 class="product-open-name2">Asegúrate de cumplir con todos los pasos indicados en nuestro post de Instagram.</h2>
+    
+        <h2 class="product-open-name">FORMULARIO DE SORTEOS</h2>
+
+
+        <form id="productForm" onsubmit="enviarAWebhook(event)">
+            <div class="product-open">
+                <!-- Menú de Selección de Producto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido aquí">
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" placeholder="Tu número aquí">
+
+                <label for="usuario_instagram">Usuario:</label>
+                <input type="text" id="usuario_instagram" name="usuario_instagram" placeholder="Tu usuario de instagram aquí">
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email aquí">
+
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Botón de redirección al pago -->
+    <a href="https://www.instagram.com/trace.stw" 
+       onclick="event.preventDefault(); validarYEnviarFormulario();"
+       style="text-decoration: none; color: inherit;" 
+       class="product-open-container">
+        <div class="product-open-details">
+            <h2 class="product-open-more-details">Enviar datos</h2>
+        </div>
+    </a>
+
+    
+    
+    
+
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <div>
+            <h3>Menú</h3>
+            <p><a href="./whatsapp">Visitá nuestra tienda</a></p>
+            <p><a href=" https://www.dac.com.uy/envios/rastrear">Rastrea tu envío</a></p>
+            <p><a href="./sobre-nosotroshref=">Sobre nosotros</a></p>
+        </div>
+        <div>
+            <h3>Conocenos</h3>
+            <p><a href="./whatsapp">Contacto</a></p>
+            <p><a href="mailto:email@tracestw.com">email@tracestw.com</a></p>
+        </div>
+    </div>
+
+    <footer class="footer-all">
+        Copyright &copy; <bold>trace</bold>
+        <script>document.write(new Date().getFullYear());</script> | Creado y desarrollado por el equipo de Trace.
+    </footer>
+
+
+    <!-- JavaScript para abrir/cerrar el menú en móvil -->
+    <script src="./scripts/navMenu.js"></script>
+    <script src="./scripts/changeMessage.js"></script>
+    <script src="./scripts/sorteosActions.js"></script>
+</body>
+
+</html>

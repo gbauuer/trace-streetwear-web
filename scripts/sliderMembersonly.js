@@ -1,1 +1,31 @@
-const _0x57a97e=_0x5dfc;function _0x5dfc(_0x55e922,_0x5b5a43){const _0x302357=_0x3023();return _0x5dfc=function(_0x5dfccb,_0x303a2e){_0x5dfccb=_0x5dfccb-0x131;let _0x1c587f=_0x302357[_0x5dfccb];return _0x1c587f;},_0x5dfc(_0x55e922,_0x5b5a43);}function _0x3023(){const _0x81107d=['../images/talles-drop-01.png','32fqEEZV','src','getElementById','1075348SZHiai','2002XVEHJB','4lkqbDn','../images/membersonly-drop-01-front.png','1843710wBNDAY','1864143sKeNLH','324iTfqyH','375779MnLeGs','23638932nqzwxI','161420FjeMbh','20zgCskI','14090oESthq','opacity','style','length'];_0x3023=function(){return _0x81107d;};return _0x3023();}(function(_0x22d955,_0x2a82cd){const _0x38b37a=_0x5dfc,_0x483223=_0x22d955();while(!![]){try{const _0x69005a=parseInt(_0x38b37a(0x13c))/0x1*(-parseInt(_0x38b37a(0x137))/0x2)+parseInt(_0x38b37a(0x139))/0x3+-parseInt(_0x38b37a(0x135))/0x4*(-parseInt(_0x38b37a(0x13f))/0x5)+parseInt(_0x38b37a(0x13b))/0x6*(parseInt(_0x38b37a(0x13e))/0x7)+-parseInt(_0x38b37a(0x132))/0x8*(-parseInt(_0x38b37a(0x13a))/0x9)+-parseInt(_0x38b37a(0x140))/0xa*(parseInt(_0x38b37a(0x136))/0xb)+-parseInt(_0x38b37a(0x13d))/0xc;if(_0x69005a===_0x2a82cd)break;else _0x483223['push'](_0x483223['shift']());}catch(_0x3f773b){_0x483223['push'](_0x483223['shift']());}}}(_0x3023,0xbfd5f));let currentIndex=0x0;const images=[_0x57a97e(0x138),'../images/membersonly-drop-01-back.png',_0x57a97e(0x131)];function changeImage(_0x1bb93c){const _0x38ab63=_0x57a97e,_0x35e2d5=document[_0x38ab63(0x134)]('slider-image');_0x35e2d5['style'][_0x38ab63(0x141)]=0x0,setTimeout(()=>{const _0x31c09c=_0x38ab63;currentIndex+=_0x1bb93c;if(currentIndex<0x0)currentIndex=images[_0x31c09c(0x143)]-0x1;else currentIndex>=images[_0x31c09c(0x143)]&&(currentIndex=0x0);_0x35e2d5[_0x31c09c(0x133)]=images[currentIndex],_0x35e2d5[_0x31c09c(0x142)][_0x31c09c(0x141)]=0x1;},0x1f4);}
+let currentIndex = 0;
+const images = [
+    "../images/membersonly-drop-01-front.png",
+    "../images/membersonly-drop-01-back.png",
+     "../images/talles-drop-01.png"
+];
+
+function changeImage(direction) {
+    const imageElement = document.getElementById("slider-image");
+
+    // Desvanecer la imagen actual
+    imageElement.style.opacity = 0;
+
+    // Cambiar la imagen después del tiempo de transición
+    setTimeout(() => {
+        currentIndex += direction;
+
+        // Asegurarse de que el índice esté en el rango
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        } else if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+
+        // Actualizar la fuente de la imagen
+        imageElement.src = images[currentIndex];
+
+        // Hacer que aparezca la nueva imagen
+        imageElement.style.opacity = 1;
+    }, 500); // Tiempo debe coincidir con la transición CSS
+}

@@ -1,1 +1,120 @@
-(function(_0x345968,_0x5cbee7){var _0x2bed98=_0x5ce6,_0x841aa9=_0x345968();while(!![]){try{var _0x1f4c20=-parseInt(_0x2bed98(0x1b4))/0x1*(parseInt(_0x2bed98(0x1c8))/0x2)+-parseInt(_0x2bed98(0x1ce))/0x3*(parseInt(_0x2bed98(0x1e1))/0x4)+parseInt(_0x2bed98(0x1da))/0x5*(-parseInt(_0x2bed98(0x1e3))/0x6)+parseInt(_0x2bed98(0x1d3))/0x7+-parseInt(_0x2bed98(0x1c7))/0x8*(parseInt(_0x2bed98(0x1b6))/0x9)+-parseInt(_0x2bed98(0x1db))/0xa+parseInt(_0x2bed98(0x1bb))/0xb;if(_0x1f4c20===_0x5cbee7)break;else _0x841aa9['push'](_0x841aa9['shift']());}catch(_0x5a4250){_0x841aa9['push'](_0x841aa9['shift']());}}}(_0x1c29,0x4c583));function mostrarSubmenu(){var _0x63c7ef=_0x5ce6,_0x5a38c2=document[_0x63c7ef(0x1de)](_0x63c7ef(0x1c4))[_0x63c7ef(0x1d8)],_0x4e38d5=document['getElementById'](_0x63c7ef(0x1b5)),_0x5bcdef=document['getElementById'](_0x63c7ef(0x1cf));if(_0x5a38c2===_0x63c7ef(0x1e0))_0x4e38d5[_0x63c7ef(0x1c1)][_0x63c7ef(0x1e5)]=_0x63c7ef(0x1ea),_0x5bcdef[_0x63c7ef(0x1c1)]['display']=_0x63c7ef(0x1bf);else _0x5a38c2==='opcion2'?(_0x4e38d5[_0x63c7ef(0x1c1)][_0x63c7ef(0x1e5)]='none',_0x5bcdef['style'][_0x63c7ef(0x1e5)]=_0x63c7ef(0x1ea)):(_0x4e38d5[_0x63c7ef(0x1c1)]['display']=_0x63c7ef(0x1bf),_0x5bcdef[_0x63c7ef(0x1c1)][_0x63c7ef(0x1e5)]=_0x63c7ef(0x1bf));}function _0x5ce6(_0x80949a,_0x2e81d8){var _0x1c2965=_0x1c29();return _0x5ce6=function(_0x5ce6ae,_0x236d50){_0x5ce6ae=_0x5ce6ae-0x1b2;var _0x22c288=_0x1c2965[_0x5ce6ae];return _0x22c288;},_0x5ce6(_0x80949a,_0x2e81d8);}function _0x1c29(){var _0x3b3262=['text','\x0a-\x20Número:\x20','1126902hxKgFC','selectedIndex','numero','then','options','value','monto','198305HbjHWk','1610080DYtDgZ','op1Sub','metodo','getElementById','\x0a-\x20Producto:\x20','opcion1','72gETQXd','Por\x20favor\x20selecciona\x20un\x20talle.','6StWJvg','Por\x20favor\x20ingresa\x20tu\x20apellido.','display','Hubo\x20un\x20error\x20al\x20enviar\x20el\x20pedido.','stringify','location','\x0a-\x20Apellido:\x20','block','op2Sub','get','\x0a-\x20Precio:\x20','1CrTfBS','submenu1','9hREzoT','Por\x20favor\x20selecciona\x20un\x20producto.','textContent','\x0a-\x20Talle:\x20','Por\x20favor\x20ingresa\x20tu\x20método\x20de\x20pago.','20857485onrRtV','search','\x0a-\x20Método\x20de\x20pago:\x20','POST','none','href','style','Hubo\x20un\x20error\x20al\x20procesar\x20tu\x20pedido.\x20Inténtalo\x20nuevamente.','Por\x20favor\x20ingresa\x20tu\x20número\x20de\x20teléfono.','mainMenu','opcion2','\x0a\x0a_______________________________','3379984jarOux','1020690ZoPXLV','nombre','Por\x20favor\x20ingresa\x20tu\x20nombre.','apellido','application/json','catch','101817lPVUxZ','submenu2','../realizarpagos?monto='];_0x1c29=function(){return _0x3b3262;};return _0x1c29();}function validarYEnviarFormulario(){var _0x55f29e=_0x5ce6,_0x22572b=document[_0x55f29e(0x1de)](_0x55f29e(0x1c4))['value'],_0x35c492,_0x2f354e='$0',_0x452f1a=document[_0x55f29e(0x1de)](_0x55f29e(0x1c4)),_0x520c49=_0x452f1a[_0x55f29e(0x1d7)][_0x452f1a[_0x55f29e(0x1d4)]],_0x193ba2=_0x520c49[_0x55f29e(0x1d1)];if(!_0x22572b){alert(_0x55f29e(0x1b7));return;}if(_0x22572b==='opcion1')_0x35c492=document[_0x55f29e(0x1de)](_0x55f29e(0x1dc))[_0x55f29e(0x1d8)],_0x2f354e='690';else _0x22572b===_0x55f29e(0x1c5)&&(_0x35c492=document['getElementById'](_0x55f29e(0x1eb))['value'],_0x2f354e='690');if(!_0x35c492){alert(_0x55f29e(0x1e2));return;}if(_0x22572b===_0x55f29e(0x1e0))_0x35c492=document['getElementById'](_0x55f29e(0x1dc))[_0x55f29e(0x1d8)];else _0x22572b===_0x55f29e(0x1c5)&&(_0x35c492=document['getElementById'](_0x55f29e(0x1eb))[_0x55f29e(0x1d8)]);let _0x17e17d=document[_0x55f29e(0x1de)](_0x55f29e(0x1c9))[_0x55f29e(0x1d8)],_0x213b77=document['getElementById'](_0x55f29e(0x1cb))[_0x55f29e(0x1d8)],_0x4a10f2=document['getElementById'](_0x55f29e(0x1d5))[_0x55f29e(0x1d8)],_0x961135=document['getElementById'](_0x55f29e(0x1dd))['value'];if(!_0x17e17d){alert(_0x55f29e(0x1ca));return;}if(!_0x213b77){alert(_0x55f29e(0x1e4));return;}if(!_0x4a10f2){alert(_0x55f29e(0x1c3));return;}if(!_0x961135){alert(_0x55f29e(0x1ba));return;}var _0x43c33d={'content':'Nuevo\x20pedido:\x0a-\x20Nombre:\x20'+_0x17e17d+_0x55f29e(0x1e9)+_0x213b77+_0x55f29e(0x1d2)+_0x4a10f2+_0x55f29e(0x1bd)+_0x961135+_0x55f29e(0x1df)+_0x193ba2+_0x55f29e(0x1b9)+_0x35c492+_0x55f29e(0x1b3)+_0x2f354e+_0x55f29e(0x1c6)},_0x18a429='https://discord.com/api/webhooks/1362809483838885979/48xTmNBkpvjjKy9koBv9eMPoPAn8UDF3RREF-8EuR4oe1DhfkYodW21uRAWLhbiUqUTS';fetch(_0x18a429,{'method':_0x55f29e(0x1be),'headers':{'Content-Type':_0x55f29e(0x1cc)},'body':JSON[_0x55f29e(0x1e7)](_0x43c33d)})[_0x55f29e(0x1d6)](_0xc53e63=>{var _0x4e1cfb=_0x55f29e;if(!_0xc53e63['ok']){alert(_0x4e1cfb(0x1c2));return;}window[_0x4e1cfb(0x1e8)][_0x4e1cfb(0x1c0)]=_0x4e1cfb(0x1d0)+_0x2f354e;})[_0x55f29e(0x1cd)](_0x5f5318=>{var _0x44c962=_0x55f29e;alert(_0x44c962(0x1e6));});}function mostrarPrecio(){var _0x2b6428=_0x5ce6;let _0xce0990=new URLSearchParams(window[_0x2b6428(0x1e8)][_0x2b6428(0x1bc)]),_0x508b7e=_0xce0990[_0x2b6428(0x1b2)](_0x2b6428(0x1d9));document['getElementById']('priceProduct')[_0x2b6428(0x1b8)]=_0x508b7e?_0x508b7e:'Desconocido';}mostrarPrecio();
+function mostrarSubmenu() {
+  var producto = document.getElementById('mainMenu').value;
+  var submenu1 = document.getElementById('submenu1');
+  var submenu2 = document.getElementById('submenu2');
+
+
+  if (producto === 'opcion1') {
+    submenu1.style.display = 'block';
+    submenu2.style.display = 'none';
+  } else if (producto === 'opcion2') {
+    submenu1.style.display = 'none';
+    submenu2.style.display = 'block';
+  } else {
+    submenu1.style.display = 'none';
+    submenu2.style.display = 'none';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+async function validarYEnviarFormulario() {
+  var producto = document.getElementById('mainMenu').value;
+  var talle;
+  var price = "$0";
+
+  var menu = document.getElementById('mainMenu');
+  var selectedOption = menu.options[menu.selectedIndex];
+  var textoProducto = selectedOption.text;
+
+
+  if (!producto) {
+      alert('Por favor selecciona un producto.');
+      return;
+  }
+
+  if (producto === 'opcion1') {
+      talle = document.getElementById('op1Sub').value;
+      price = "690"
+  } else if (producto === 'opcion2') {
+      talle = document.getElementById('op2Sub').value;
+      price = "690"
+  }
+
+  if (!talle) {
+      alert('Por favor selecciona un talle.');
+      return;
+  }
+
+
+  if (producto === 'opcion1') {
+    talle = document.getElementById('op1Sub').value;
+} else if (producto === 'opcion2') {
+    talle = document.getElementById('op2Sub').value;
+}
+let nombre = document.getElementById('nombre').value;
+let apellido = document.getElementById('apellido').value;
+let numero = document.getElementById('numero').value;
+let metodo = document.getElementById('metodo').value;
+
+if (!nombre) {
+  alert('Por favor ingresa tu nombre.');
+  return;
+}
+
+if (!apellido) {
+  alert('Por favor ingresa tu apellido.');
+  return;
+}
+
+if (!numero) {
+  alert('Por favor ingresa tu número de teléfono.');
+  return;
+}
+
+if (!metodo) {
+  alert('Por favor ingresa tu método de pago.');
+  return;
+}
+
+  var mensaje = {
+    content: `Nuevo pedido:\n- Nombre: ${nombre}\n- Apellido: ${apellido}\n- Número: ${numero}\n- Método de pago: ${metodo}\n- Producto: ${textoProducto}\n- Talle: ${talle}\n- Precio: ${price}\n\n_______________________________`
+  };
+
+  var webhookUrl = 'https://discord.com/api/webhooks/1362809483838885979/48xTmNBkpvjjKy9koBv9eMPoPAn8UDF3RREF-8EuR4oe1DhfkYodW21uRAWLhbiUqUTS';
+
+  await fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(mensaje),
+  })
+  .then(response => {
+    if (!response.ok) {
+        alert('Hubo un error al procesar tu pedido. Inténtalo nuevamente.');
+        return;
+    }
+    window.location.href = `../realizarpagos?monto=${price}`;
+  })
+  .catch(error => {
+    alert('Hubo un error al enviar el pedido.');
+  });
+}
+
+
+function mostrarPrecio() {
+  let urlParams = new URLSearchParams(window.location.search);
+  let price = urlParams.get('monto');
+  document.getElementById('priceProduct').textContent = price ? price : 'Desconocido';
+}
+
+mostrarPrecio();
