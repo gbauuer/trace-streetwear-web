@@ -1,119 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trace Streetwear</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index-responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trace streetwear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Rounded:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      font-family: 'Montserrat Rounded', sans-serif;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background: #111;
+      color: #f2f2f2;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fondo streetwear con 6 imágenes adaptativas */
+    .background-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      z-index: -1;
+    }
+
+    .background-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.25;
+      filter: grayscale(50%) contrast(1.1);
+    }
+
+    .street-card {
+      width: min(90vw, 500px);
+      background: #1c1c1c;
+      border-radius: 16px;
+      padding: 24px;
+      position: relative;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    h1 {
+      font-size: 28px;
+      letter-spacing: 1.5px;
+      color: #f2f2f2;
+      margin-bottom: 18px;
+    }
+
+    .frame {
+      width: 85%;
+      margin: 0 auto 16px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .frame img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      filter: grayscale(70%) contrast(1.1) brightness(0.95);
+    }
+
+    .street-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #f2f2f2;
+      color: #111;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 6px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p.sub {
+      font-size: 13px;
+      color: #888;
+      letter-spacing: 0.8px;
+      margin-top: 10px;
+    }
+
+    footer.note {
+      font-size: 11px;
+      color: #888;
+      margin-top: 12px;
+    }
+
+    @media (max-width:400px) {
+      h1 {
+        font-size: 22px
+      }
+
+      .street-card {
+        padding: 16px
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="background-grid">
+    <img src="1.png" alt="Streetwear">
+    <img src="2.png" alt="Streetwear">
+    <img src="3.png" alt="Streetwear">
+    <img src="4.png" alt="Streetwear">
+    <img src="5.png" alt="Streetwear">
+    <img src="6.png" alt="Streetwear">
+  </div>
 
-    <div id="welcomeScreen" class="screen">
-        <img src="video.png" alt="Video" id="fullscreenImage" class="fullscreen-image">
+  <div class="street-card">
+    <div class="street-tag">TRACE®</div>
+    <h1>Where's TRACE?</h1>
 
-        <video id="fullscreenVideo" class="fullscreen-video" playsinline muted>
-            <source src="video.mp4" type="video/mp4"> <!-- Cambia la ruta por la de tu video -->
-            Tu navegador no soporta el elemento de video.
-        </video>
-        <button id="skipIntro" class="skipintro-btn">saltear la introducción</button>
-        <button id="playButton" class="entrar-btn">entrar</button>
-        <div id="centerText" class="centered-text" style="display: none;">TRACE.</div>
-    </div>
-
-    <div id="mainContent" class="screen" style="display: none;">
-        <!-- Barra de anuncios -->
-        <div class="top-bar">
-            <p id="text">ENVÍOS GRATIS A PARTIR DE $2500</p>
-        </div>
-
-        <!-- Encabezado principal -->
-        <header class="main-header">
-            <div class="nav-wrapper">
-                <!-- Icono de menú (solo visible en móviles) -->
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <!-- Menú de navegación -->
-                <nav class="nav-menu">
-                    <a href="/">Tienda</a>
-                    <a href="sobre-nosotros">Sobre nosotros</a>
-                    <a href="whatsapp">Contacto</a>
-                </nav>
-
-                <!-- Logo en el centro -->
-                <div class="logo">
-                    <img src="images/logo.gif" alt="Logo" class="logo-img">
-                </div>
-
-                <!-- Iconos de la derecha -->
-                <div class="nav-icons">
-                    <a href="https://www.instagram.com/trace.stw"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
-                </div>
-            </div>
-        </header>
-
-        <div class="image-container">
-            <img src="images/drop01.png" alt="Drop01" class="full-width-image">
-        </div>
-
-        <div class="products-container">
-                <div class="product">
-                      <a class="product-a" href="drops/remera-oversize-fears-drop-01">
-                        <img src="images/fears-drop-01-front.png" alt="Nombre del Producto 2" style="width: 97.8%;" class="product-image-fears">
-                    <h2 class="product-name">REMERA OVERSIZE FEARS - DROP 1</h2>
-                    <div class="price-container">
-                        <p class="product-price old-price">$1100</p>
-                        <p class="product-price current-price">$690</p>
-                    </div>
-                </div>
-            </a>
-            <div class="product">
-                <a class="product-a" href="drops/remera-oversize-members-only-drop-01">
-                    <img src="images/membersonly-drop-01-front.png" alt="Nombre del Producto 2" style="width: 97.8%;" class="product-image-membersonly">
-                    <h2 class="product-name">REMERA OVERSIZE MEMBERS ONLY - DROP 1</h2>
-                    <div class="price-container">
-                        <p class="product-price old-price">$1100</p>
-                        <p class="product-price current-price">$690</p>
-                    </div>
-            </div>
-            </a>
-        </div>
-
-
-    <div class="footer">
-        <div class="footer-logo">
-            <img src="images/logo.png" alt="Logo" />
-        </div>
-        <div>
-            <h3>Menú</h3>
-            <p><a href="whatsapp">Visitá nuestra tienda</a></p>
-            <p><a href="https://www.dac.com.uy/envios/rastrear">Rastrea tu envío</a></p>
-            <p><a href="sobre-nosotros">Sobre nosotros</a></p>
-        </div>
-        <div>
-            <h3>Conocenos</h3>
-            <p><a href="whatsapp">Contacto</a></p>
-            <p><a href="mailto:email@tracestw.com">email@tracestw.com</a></p>
-        </div>
-    </div>
-
-    <footer class="footer-all">
-        Copyright &copy; <bold>trace</bold> <script>document.write(new Date().getFullYear());</script> | Creado y desarrollado por el equipo de Trace.
-    </footer>
-
-</div>
-
-    <!-- JavaScript para abrir/cerrar el menú en móvil -->
-    <script src="scripts/navMenu.js"></script>
-    <script src="scripts/changeMessage.js"></script>
-    <script src="scripts/enterButton.js"></script>
+    <p class="sub"><b>¿? ¿1? ¿2? ¿2? ¿2? ¿?</b></p>
+    <footer class="note">@trace.stw / Streetwear identity</footer>
+  </div>
 </body>
 
 </html>
